@@ -1,0 +1,19 @@
+豆瓣电影API：
+
+1）本地热映
+https://douban.uieee.com/v2/movie/in_theaters?start=0&count=20&city=上海
+
+2）即将上映
+https://douban.uieee.com/v2/movie/coming_soon?start=0&count=20
+
+3）影片详情
+https://douban.uieee.com/v2/movie/subject/26816372
+
+4) 排行250部电影
+https://douban.uieee.com/v2/movie/top250?start=0 &count=20
+
+5）关键字查询影片信息
+https://douban.uieee.com/v2/movie/search?q=肖申克的救赎
+
+注意：
+豆瓣电影API对同一个IP会有请求次数限制，一分钟只能请求30-40次。如果刷新不出来就等待一会儿再试。
