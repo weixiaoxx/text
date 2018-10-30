@@ -10,7 +10,7 @@ class Type extends React.Component {
     
     render() {
         return <div>
-        	<h1>Type</h1>
+        	<h1>Type </h1>
         </div>;
     }
 }
