@@ -64,10 +64,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	});
 </script>
 <!-- start-smoth-scrolling -->
+
 </head>
 	
 <body>
 <!-- header -->
+	<div id="app-container"></div>
 	<div class="header">
 		<div class="container">
 			<div class="w3layouts_logo">
@@ -1884,6 +1886,7 @@ $(document).ready(function(){
     );
 });
 </script>
+
 <!-- //Bootstrap Core JavaScript -->
 <!-- here stars scrolling icon -->
 	<script type="text/javascript">
@@ -1898,9 +1901,21 @@ $(document).ready(function(){
 			*/
 								
 			$().UItoTop({ easingType: 'easeOutQuart' });
-								
+			
+			$.ajax({
+				type:"get",
+				dataType:"jsonp",
+				url:"https://douban.uieee.com/v2/movie/in_theaters?start=0&count=20&city=中国",
+				async:true,
+				success:function(data){
+					console.log(data)
+				}
 			});
+								
+		});
 	</script>
 <!-- //here ends scrolling icon -->
 </body>
 </html>
+
+<script src="js/all.js" type="text/javascript" charset="utf-8"></script>

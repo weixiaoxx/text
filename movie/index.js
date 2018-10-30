@@ -18,9 +18,9 @@ server.engine('html', ejs.renderFile);
 server.set('views', './views');
 server.set('view engine', 'html');
 
-
 server.get('/',function(req,res){
 	res.render('index')
+
 })
 
 
