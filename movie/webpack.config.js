@@ -6,7 +6,7 @@ module.exports = {
         path: path.resolve(__dirname, "views"), // string
         filename: "js/all.js"
     },
-    mode:'development',
+    mode:'development', 
     devServer: {
      contentBase: './views'
     },
